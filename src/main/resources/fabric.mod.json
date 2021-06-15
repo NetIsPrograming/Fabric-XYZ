@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "xyz",
+  "version": "${version}",
+
+  "name": "XYZ",
+  "description": "Adds in Custom Hud Stuffs",
+  "authors": [
+    "NetUserGet"
+  ],
+
+
+  "custom": {
+    "modmenu": {
+      "id": "xyz",
+      "name": "XYZ",
+      "description": "Adds in Custom Hud Stuffs",
+      "icon": "assets/xyz/Icon.png",
+      "badges": []
+    }
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/xyz/Icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.NetUserGet.XYZ.XYZ"
+    ],
+    "modmenu": [
+      "com.NetUserGet.XYZ.configStuffs.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "xyz.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "cloth-config2": ">=4.11.19"
+  }
+}

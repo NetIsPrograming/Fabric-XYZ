@@ -1,0 +1,11 @@
+{
+  "config.xyz.main": "XYZ config",
+  "text.autoconfig.xyz.title": "Main",
+  "text.autoconfig.xyz.option.textColor.@Tooltip[0]": "This Box uses The 0xAARRGGBB format,",
+  "text.autoconfig.xyz.option.textColor.@Tooltip[1]": "The first two hex numbers is the opacity the rest is the normal",
+  "text.autoconfig.xyz.option.textColor": "Text Color:",
+  "text.autoconfig.xyz.option.toggleCoordinates": "Toggle Coordinates:",
+  "text.autoconfig.xyz.option.toggleDirection": "Toggle Direction:",
+  "text.autoconfig.xyz.option.toggleSaturation": "Toggle Saturation:",
+  "text.autoconfig.xyz.option.toggleXyzVersion": "Toggle Version Number:"
+}

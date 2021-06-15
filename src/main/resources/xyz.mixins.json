@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.NetUserGet.XYZ.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [],
+  "client": [
+    "TitleScreenMixin",
+    "BossBarHudAccessor"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
