@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 public class XYZ implements ClientModInitializer {
 
 	public static final String MOD_ID = "xyz";
-	public static String VERSION = "0.1.2";
+	public static String VERSION = "0.1.3";
 	public static boolean isInAlpha = true;
 	public static boolean isInBeta = false;
 	public static boolean isInRelease = false;

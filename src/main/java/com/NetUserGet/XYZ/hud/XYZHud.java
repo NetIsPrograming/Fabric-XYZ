@@ -68,7 +68,7 @@ public class XYZHud {
 
 
 
-            //Map<UUID, ClientBossBar> bossBars = ((BossBarHudAccessor) client.inGameHud.getBossBarHud()).getBossBars();
+            Map<UUID, ClientBossBar> bossBars = ((BossBarHudAccessor) client.inGameHud.getBossBarHud()).getBossBars();
 
             /* Gets Coordinates and Player Head Yaw
             Formats them into a nice little package
@@ -120,30 +120,22 @@ public class XYZHud {
             satX = textEquation(saturationLevel); // Self explanatory by now
             satY = config.toggleDirection ? directionY + spacing : directionY;  // Same thing here with the "spacing".
 
-            /*if (!bossBars.isEmpty()) {
-               Iterator bossBarIterator = bossBars.values().iterator();
-               int scaledWidth = client.getWindow().getScaledWidth();
-               int scaledHeight = client.getWindow().getScaledHeight();
-               float bossBarSpacing = 12;
-               int TMPran = 0;
-               while(bossBarIterator.hasNext()) {
-                    TMPran++;
-                    if (TMPran == 1)  {
-                        cordsY += bossBarSpacing;
-                        directionY += bossBarSpacing;
-                        satY += bossBarSpacing;
-                        bossBarSpacing += 19;
-                    }
+            if (!bossBars.isEmpty()) {
+                float scaledHeight = client.getWindow().getScaledHeight();
+                float bossBarSpacing = 5.0f;
+                float bossBarBackLash = 12.0f;
 
+                for (int i = 0; bossBars.size() >= i; i++) {
+                    cordsY += bossBarSpacing;
+                    directionY += bossBarSpacing;
+                    satY += bossBarSpacing;
+
+                    bossBarSpacing += bossBarSpacing;
                     if (bossBarSpacing >= scaledHeight / 3) {
-                        cordsY -= bossBarSpacing;
-                        directionY -= bossBarSpacing;
-                        satY -= bossBarSpacing;
                         break;
                     }
-
-               }
-            }*/
+                }
+            }
 
 
             if (!client.options.keyPlayerList.isPressed() || client.isInSingleplayer() && client.player.networkHandler.getPlayerList().size() <= 1 ) {
