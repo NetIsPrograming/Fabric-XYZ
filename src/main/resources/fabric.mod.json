@@ -29,7 +29,7 @@
       "com.NetUserGet.XYZ.XYZ"
     ],
     "modmenu": [
-      "com.NetUserGet.XYZ.configStuffs.ModMenuIntegration"
+      "com.NetUserGet.XYZ.config.ModMenuIntegration"
     ]
   },
   "mixins": [

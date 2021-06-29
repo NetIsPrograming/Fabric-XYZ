@@ -41,7 +41,9 @@ public class XYZ implements ClientModInitializer {
 
 		LOGGER.info(LOGGER_PREFIX + "Initialization has Began");
 
-		AutoConfig.register(XYZConfig.class, GsonConfigSerializer::new);
+		AutoConfig.register(
+				XYZConfig.class,
+				GsonConfigSerializer::new);
 
 		XYZHud.register();
 
