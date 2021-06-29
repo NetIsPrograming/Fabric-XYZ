@@ -1,7 +1,7 @@
 package com.NetUserGet.XYZ;
 
 
-import com.NetUserGet.XYZ.configStuffs.XYZConfig;
+import com.NetUserGet.XYZ.config.XYZConfig;
 import com.NetUserGet.XYZ.hud.XYZHud;
 
 import me.shedaniel.autoconfig.AutoConfig;

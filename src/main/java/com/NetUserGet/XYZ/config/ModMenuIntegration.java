@@ -1,4 +1,4 @@
-package com.NetUserGet.XYZ.configStuffs;
+package com.NetUserGet.XYZ.config;
 
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;

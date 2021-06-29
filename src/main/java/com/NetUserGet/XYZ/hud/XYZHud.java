@@ -1,16 +1,14 @@
 package com.NetUserGet.XYZ.hud;
 
 
-import com.NetUserGet.XYZ.configStuffs.XYZConfig;
+import com.NetUserGet.XYZ.config.XYZConfig;
 import com.NetUserGet.XYZ.mixin.BossBarHudAccessor;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.hud.BossBarHud;
 import net.minecraft.client.gui.hud.ClientBossBar;
 import net.minecraft.client.util.math.MatrixStack;
 
-import java.util.Iterator;
 import java.util.Map;
 import java.util.UUID;
 
@@ -52,7 +50,7 @@ public class XYZHud {
 
         HudRenderCallback.EVENT.register((matrices, tickDelta) -> {
 
-            float spacing = 8; // Spacing between the text objects.
+            float spacing = 8; // Spacing between the Text.
 
             String coordinates;
             float cordsX;
@@ -81,11 +79,10 @@ public class XYZHud {
                     client.cameraEntity.getHeadYaw());
 
 
-             cordsX = textEquation(coordinates); // The x Position of the coordinates String :>
-             cordsY = 2; // The y Position of the coordinates String :>
+             cordsX = textEquation(coordinates);
+             cordsY = 2;
 
 
-            // A switch statement to get the players direction that their facing
             switch(client.player.getHorizontalFacing()){
                    case NORTH:
                        direction = "North";

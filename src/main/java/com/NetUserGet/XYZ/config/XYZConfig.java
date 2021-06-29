@@ -1,4 +1,4 @@
-package com.NetUserGet.XYZ.configStuffs;
+package com.NetUserGet.XYZ.config;
 
 
 import me.shedaniel.autoconfig.*;

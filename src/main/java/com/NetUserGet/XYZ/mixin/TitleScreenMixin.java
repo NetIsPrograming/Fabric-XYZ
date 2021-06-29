@@ -1,6 +1,6 @@
 package com.NetUserGet.XYZ.mixin;
 
-import com.NetUserGet.XYZ.configStuffs.XYZConfig;
+import com.NetUserGet.XYZ.config.XYZConfig;
 import com.NetUserGet.XYZ.XYZ;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.gui.screen.Screen;
